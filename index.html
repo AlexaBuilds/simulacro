@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte Técnico - Simulacro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="card-container">
+        
+        <h1 class="main-title">Soporte Técnico</h1>
+
+        <section class="form-group">
+            <input type="text" id="inputEquipo" placeholder="Equipo (Ej: PC-04)">
+            
+            <input type="text" id="inputProblema" placeholder="Descripción del problema">
+            
+            <button id="btnAbrirTicket">ABRIR TICKET</button>
+        </section>
+
+        <section class="list-section">
+            <h2>Incidencias Pendientes</h2>
+            <ul id="listaTickets">
+                </ul>
+        </section>
+
+        <footer class="counter-box">
+            <h3>Tickets Abiertos: <span id="contadorTickets">0</span></h3>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

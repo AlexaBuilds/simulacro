@@ -1,0 +1,127 @@
+/* ==========================================================================
+   TITULO: DISEÑO DE INTERFAZ DE SOPORTE (CLON IDENTICO)
+   ========================================================================== */
+
+/* 1. RESETEO Y CONFIGURACIÓN BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* 2. FONDO DE LA PÁGINA (Gris sutil para resaltar la tarjeta) */
+body {
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* 3. CONTENEDOR TARJETA BLANCA (Mismo aspecto que la captura) */
+.card-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* 4. TÍTULO PRINCIPAL (Con línea inferior divisoria fina) */
+.main-title {
+    color: #0c1d43;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #eaedf2;
+    margin-bottom: 25px;
+}
+
+/* 5. FORMULARIO E INPUTS */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #222222; /* Borde oscuro marcado como la foto */
+    border-radius: 6px;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+/* Segundo input con borde más fino según la captura */
+.form-group input#inputProblema {
+    border: 1px solid #a0aab5;
+}
+
+/* 6. BOTÓN ROJO EN MAYÚSCULAS */
+#btnAbrirTicket {
+    background-color: #d62424; /* Rojo vibrante de la imagen */
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: background-color 0.2s;
+}
+
+#btnAbrirTicket:hover {
+    background-color: #b01b1b;
+}
+
+/* 7. SECCIÓN DE LA LISTA */
+.list-section h2 {
+    color: #344563;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+#listaTickets {
+    margin-left: 20px; /* Margen para respetar las viñetas por defecto */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+/* 8. ELEMENTOS DE LA LISTA (Fondo rosado/gris con borde rojo izquierdo) */
+.ticket-item {
+    background-color: #fff5f5; /* Fondo ligeramente tintado */
+    padding: 12px 15px;
+    border-radius: 4px;
+    border-left: 4px solid #d62424; /* Línea roja vertical izquierda */
+    font-size: 1.05rem;
+    color: #000000;
+}
+
+/* 9. CAJA DEL CONTADOR INFERIOR (Gris claro redondeado) */
+.counter-box {
+    background-color: #f0f4f8;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.counter-box h3 {
+    color: #000000;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* El número del contador en rojo resaltado */
+#contadorTickets {
+    color: #d62424;
+    font-size: 1.3rem;
+}

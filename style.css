@@ -20,7 +20,7 @@ body {
     padding: 20px;
 }
 
-/* 3. CONTENEDOR TARJETA BLANCA (Mismo aspecto que la captura) */
+/* 3. CONTENEDOR TARJETA BLANCA (Mismo aspecto que la foto de referencia) */
 .card-container {
     background-color: #ffffff;
     width: 100%;
@@ -51,13 +51,13 @@ body {
 .form-group input {
     width: 100%;
     padding: 12px;
-    border: 2px solid #222222; /* Borde oscuro marcado como la foto */
+    border: 2px solid #222222; /* Borde oscuro marcado como la foto de referencia */
     border-radius: 6px;
     font-size: 0.95rem;
     color: #333;
 }
 
-/* Segundo input con borde más fino según la captura */
+/* Segundo input con borde más fino según la foto de referencia */
 .form-group input#inputProblema {
     border: 1px solid #a0aab5;
 }

@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Control de código (Checkout)
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Desplegar archivos en el servidor AWS mediante SSH
         uses: appleboy/scp-action@master
